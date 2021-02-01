@@ -1,20 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react'
 import './App.css';
+import Header from './Hearder'
+import List from './List';
+import Form from './Form'
 
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
+const userName = "Linor";
+const guitarList = [
+  {
+    _id: "1",
+    title: 'Rogue Starter Acoustic Guitar',
+    price: '248.00',
+  },
+  {
+    _id: "2",
+    title: 'G&L Limited Edition Tribute ASAT Classic Bluesboy Electric Guitar',
+    price: '1594.30',
+  },
+  {
+    _id: "3",
+    title: 'Rogue RG-624 Left-Handed Dreadnought Acoustic Guitar',
+    price: '354.30',
+  }
+];
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Welcome name="Linor" />
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+          <Header userName={userName} /> 
+          <List guitarList={guitarList}/>
+          <Form />
+      </div>
+    )
+  }
 }
 
 export default App;
