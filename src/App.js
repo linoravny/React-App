@@ -1,8 +1,14 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './App.css';
 import Header from './Hearder'
-import List from './List';
-import Form from './Form'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import List from './userStore/List';
+import LoginForm from './login/LoginForm'
 
 const userName = "Linor";
 const guitarList = [
@@ -23,16 +29,25 @@ const guitarList = [
   }
 ];
 
-class App extends Component {
-  render() {
+
+function App() {
+
     return (
       <div className="App">
+         <Router>
           <Header userName={userName} /> 
-          <List guitarList={guitarList}/>
-          <Form />
+
+          <Switch>
+            <Route exact path="/store">
+              <List guitarList={guitarList}/>
+            </Route>
+            <Route path="/loginForm">
+              <LoginForm /> 
+            </Route>
+          </Switch>
+        </Router>
       </div>
     )
-  }
 }
 
 export default App;

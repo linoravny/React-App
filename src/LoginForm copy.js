@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 // update the state of Form every time a field is changed in the form, and when we submit,
-class Form extends Component {
+class LoginForm2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -9,7 +9,7 @@ class Form extends Component {
       password: ''
     };
 
-    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);// This binding is necessary to make `this` work in the callback
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -32,6 +32,7 @@ class Form extends Component {
     const { email, password } = this.state;
 
       return (
+        // JSX
         <div>
           <h3>Login Form</h3>
           <form>
@@ -59,4 +60,4 @@ class Form extends Component {
 
 }
 
-export default Form;
+export default LoginForm2;
