@@ -1,14 +1,10 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { logIn, logOut } from '../actions';
+import { useSelector } from 'react-redux';
 
 // user props data object - one way data flow
 function List() {
   const isUserActive = useSelector(state => state.isLoggedIn);
 
-  const dispatch = useDispatch();
-  dispatch(logIn());
-  // dispatch(logOut());
   // if(isUserActive) {
   //   items = this.props.guitarList.map((item, index) => {
   //     return (
