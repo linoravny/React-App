@@ -9,15 +9,15 @@ import { createStore } from 'redux';
 import allReducers  from './reducers/index';
 
  // CREATE STORE 
-const store = createStore(
+const storeApp = createStore(
   allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() //chrome de=v tool: zalmoxisus/redux-devtools-extension
 ); 
 
 ReactDOM.render(
   <React.StrictMode>
-     <Provider store={store}>
-      <App />
+     <Provider store={storeApp}>
+        <App />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

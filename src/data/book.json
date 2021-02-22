@@ -1,0 +1,691 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 489,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "rRgUAAAAYAAJ",
+        "etag": "9+XZ8pWV4Dw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/rRgUAAAAYAAJ",
+        "volumeInfo": {
+          "title": "“A” complete Hebrew and English critical and pronouncing dictionary",
+          "subtitle": "on a new and improved plan, containing all the words in the Holy Bible, both Hebrew and Chaldee ... to which is added an English index of nearly one hundred pages ...",
+          "authors": [
+            "William L. Roy"
+          ],
+          "publishedDate": "1846",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "HARVARD:32044086561339"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 824,
+          "printType": "BOOK",
+          "categories": [
+            "English language"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "3.4.4.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=rRgUAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=rRgUAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "iw",
+          "previewLink": "http://books.google.com/books?id=rRgUAAAAYAAJ&pg=PA562&dq=a&hl=&cd=1&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=rRgUAAAAYAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=rRgUAAAAYAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=rRgUAAAAYAAJ&rdid=book-rRgUAAAAYAAJ&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "downloadLink": "http://books.google.com/books/download/A_complete_Hebrew_and_English_critical_a.pdf?id=rRgUAAAAYAAJ&hl=&output=pdf&sig=ACfU3U1SUCfBRllKxTeF9SifIM7Vl8zwEg&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=rRgUAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "P . N . as with \u003cb\u003ea\u003c/b\u003e chain , or collar . 3 . f . s . Pret . K . ay \u003cb\u003ea\u003c/b\u003e - nam - me - lech . The \u003cbr\u003e\nmagician of R . — . the king , an idol of Sepharvaim . P . N . 75 \u003cb\u003ea\u003c/b\u003e - nair . Name of \u003cb\u003ea\u003c/b\u003e \u003cbr\u003e\nCanaanitish man , 2 K . 17 : 31 . | also , of \u003cb\u003ea\u003c/b\u003e city of the Levites , in the territory of&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "8R5IAQAAMAAJ",
+        "etag": "fXcZM3DZiME",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/8R5IAQAAMAAJ",
+        "volumeInfo": {
+          "title": "A Hebrew reader",
+          "subtitle": "or, A new and practical system for the acquisition of the Hebrew language",
+          "authors": [
+            "Eli Noyes"
+          ],
+          "publishedDate": "1846",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "NYPL:33433113860310"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 204,
+          "printType": "BOOK",
+          "categories": [
+            "Hebrew language"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.2.2.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=8R5IAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=8R5IAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "iw",
+          "previewLink": "http://books.google.com/books?id=8R5IAQAAMAAJ&pg=PA178&dq=a&hl=&cd=2&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=8R5IAQAAMAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=8R5IAQAAMAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=8R5IAQAAMAAJ&rdid=book-8R5IAQAAMAAJ&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=8R5IAQAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "or, \u003cb\u003eA\u003c/b\u003e new and practical system for the acquisition of the Hebrew language Eli \u003cbr\u003e\nNoyes. 2 . When beginning \u003cb\u003ea\u003c/b\u003e word in the middle of \u003cb\u003ea\u003c/b\u003e verse , if \u003cb\u003ea\u003c/b\u003e mixed syllable \u003cbr\u003e\nimmediately follows . 3 . “ When beginning \u003cb\u003ea\u003c/b\u003e word preceded by \u003cb\u003ea\u003c/b\u003e simple syllable\u003cbr\u003e\n&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "39GXG5lHUqoC",
+        "etag": "0vo9VMsLdnE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/39GXG5lHUqoC",
+        "volumeInfo": {
+          "title": "\"Éljen a király!\" Szent hangzatok ...",
+          "authors": [
+            "Simon Bacher"
+          ],
+          "publishedDate": "1867",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "ONB:+Z229462206"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 25,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.1.2.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=39GXG5lHUqoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=39GXG5lHUqoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "iw",
+          "previewLink": "http://books.google.com/books?id=39GXG5lHUqoC&pg=PP13&dq=a&hl=&cd=3&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=39GXG5lHUqoC&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=39GXG5lHUqoC"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=39GXG5lHUqoC&rdid=book-39GXG5lHUqoC&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "downloadLink": "http://books.google.com/books/download/%C3%89ljen_a_kir%C3%A1ly_Szent_hangzatok.pdf?id=39GXG5lHUqoC&hl=&output=pdf&sig=ACfU3U1vtyeBJSIJX3FCwlWSqFF0nG-fLw&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=39GXG5lHUqoC&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Örül - körül \u003cb\u003ea\u003c/b\u003e nép , s bizton remél megint ; Boldogságot áhit s jobb időt \u003cb\u003ea\u003c/b\u003e honnak . \u003cbr\u003e\nItt sütik az ökröt , ősi szokás szerint ; Amott borpatakok habjai bolyongnak . Örül - \u003cbr\u003e\nkörül \u003cb\u003ea\u003c/b\u003e nép ; – alácsüggedt lelke Vidáman fölremél ; - \u003cb\u003ea\u003c/b\u003e mult elfeledve ."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "BclL2lJNCH0C",
+        "etag": "4Su4vLeOKVk",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/BclL2lJNCH0C",
+        "volumeInfo": {
+          "title": "A Grammar of the English language for the use of Hebrews",
+          "publishedDate": "1840",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "BDM:13020100008805"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 144,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.0.2.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=BclL2lJNCH0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=BclL2lJNCH0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "iw",
+          "previewLink": "http://books.google.com/books?id=BclL2lJNCH0C&pg=PA103&dq=a&hl=&cd=4&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=BclL2lJNCH0C&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BclL2lJNCH0C"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=BclL2lJNCH0C&rdid=book-BclL2lJNCH0C&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false,
+            "downloadLink": "http://books.google.com/books/download/A_Grammar_of_the_English_language_for_th.epub?id=BclL2lJNCH0C&hl=&output=epub&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=BclL2lJNCH0C&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "זקט גי בנוקב הט p : \u003cb\u003eA\u003c/b\u003e horse is stronger than \u003cb\u003ea\u003c/b\u003e man סוס עכוס מחרס • He has \u003cb\u003ea\u003c/b\u003e few \u003cbr\u003e\nhorses , and \u003cb\u003ea\u003c/b\u003e great many cows קול ים לו מעט סוסיס , ופרות רבות . \u003cb\u003eA\u003c/b\u003e hundred ducks , \u003cbr\u003e\nand \u003cb\u003ea\u003c/b\u003e thousand geese מחק בר חוז , וחלף חוות • Have you ever heard talk of such \u003cb\u003ea\u003c/b\u003e\u003cbr\u003e\n&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "ExcNRh6ji7YC",
+        "etag": "CoGDWupDnow",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/ExcNRh6ji7YC",
+        "volumeInfo": {
+          "title": "Biblia hebraica, olim a Christiano Reinecio evulgata post ad fidem recensionis masoreticæ cum variis lectionibus ex ingenti codicum mss. copia a Benj Kennicotto et J.B. De Rossi collatorum edita curantibus Jo. Christoph. Doederleinio et Jo. Henric. Meisnero",
+          "publishedDate": "1818",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "RMS:RMS1LSO$000002010$$$9"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 1418,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.2.1.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=ExcNRh6ji7YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=ExcNRh6ji7YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "iw",
+          "previewLink": "http://books.google.com/books?id=ExcNRh6ji7YC&pg=RA2-PA317&dq=a&hl=&cd=5&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=ExcNRh6ji7YC&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ExcNRh6ji7YC"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=ExcNRh6ji7YC&rdid=book-ExcNRh6ji7YC&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=ExcNRh6ji7YC&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "ח ב קי ק Vaftatio Tucacae per Chalcacos praedišta , א .c \u003cb\u003eA\u003c/b\u003e P. I א וּמַשָׂא ( * \u003cbr\u003e\nאֲשֶׁר חָזָה ( חֲנַקְוּק הַנָּבִיא : עַד • ( 4 אָנָה א 2 ( \u003cbr\u003e\nיְהיָה ( 1 שִׁיעתִּי וְלֹא תִשְׁמַע אֶזְעַק אֵלַיִךְ \u003cbr\u003e\nחָמָס וְא&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "zOTUAAAAMAAJ",
+        "etag": "wwpucqMT244",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/zOTUAAAAMAAJ",
+        "volumeInfo": {
+          "title": "A Wisp of Myrrh in a Bed of Spices",
+          "subtitle": "A Narrative of Interesting Events in the Life of Israel's Benefactor, the Illustrious Philanthropist, Sir Moses Montefiore ...",
+          "authors": [
+            "Abraham Shaffner"
+          ],
+          "publishedDate": "1887",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "IND:30000081549994"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 329,
+          "printType": "BOOK",
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "0.1.3.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=zOTUAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=zOTUAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "iw",
+          "previewLink": "http://books.google.com/books?id=zOTUAAAAMAAJ&pg=PP319&dq=a&hl=&cd=6&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=zOTUAAAAMAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=zOTUAAAAMAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=zOTUAAAAMAAJ&rdid=book-zOTUAAAAMAAJ&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false,
+            "downloadLink": "http://books.google.com/books/download/A_Wisp_of_Myrrh_in_a_Bed_of_Spices.epub?id=zOTUAAAAMAAJ&hl=&output=epub&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "downloadLink": "http://books.google.com/books/download/A_Wisp_of_Myrrh_in_a_Bed_of_Spices.pdf?id=zOTUAAAAMAAJ&hl=&output=pdf&sig=ACfU3U1YLr28m6pX09Ref2bNJf5OF8R9Tg&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=zOTUAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "\u003cb\u003eA\u003c/b\u003e Narrative of Interesting Events in the Life of Israel&#39;s Benefactor, the Illustrious \u003cbr\u003e\nPhilanthropist, Sir Moses Montefiore ... Abraham Shaffner. honor of the host and \u003cbr\u003e\nof the guests , added to the enjoyment of the assembled company . Suddenly , \u003cb\u003ea\u003c/b\u003e\u003cbr\u003e\n&nbsp;..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "z8nXD17NdeoC",
+        "etag": "StjHaz2O75g",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/z8nXD17NdeoC",
+        "volumeInfo": {
+          "title": "Motor Neuron Disease",
+          "subtitle": "A Practical Manual",
+          "authors": [
+            "Kevin Talbot",
+            "Rachael Marsden",
+            "Rachel Botell"
+          ],
+          "publisher": "Oxford University Press",
+          "publishedDate": "2010",
+          "description": "Written and designed to provide comprehensive, easily accessible advice for all healthcare professionals involved in the care of patients with this challenging condition, this book addresses the entire care pathway from presentation to diagnosis to symptom management and end of life issues.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780199547364"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "019954736X"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 214,
+          "printType": "BOOK",
+          "categories": [
+            "Medical"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=z8nXD17NdeoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=z8nXD17NdeoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=z8nXD17NdeoC&printsec=frontcover&dq=a&hl=&cd=7&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=z8nXD17NdeoC&dq=a&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Motor_Neuron_Disease.html?hl=&id=z8nXD17NdeoC"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=z8nXD17NdeoC&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Written and designed to provide comprehensive, easily accessible advice for all healthcare professionals involved in the care of patients with this challenging condition, this book addresses the entire care pathway from presentation to ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "Hch7AgAAQBAJ",
+        "etag": "pQIwZInRngc",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/Hch7AgAAQBAJ",
+        "volumeInfo": {
+          "title": "Family Law: A Very Short Introduction",
+          "authors": [
+            "Jonathan Herring"
+          ],
+          "publisher": "OUP Oxford",
+          "publishedDate": "2014-02-27",
+          "description": "What is a family? What makes someone a parent? What rights should children have? Family Law: A Very Short Introduction gives the reader an insight not only into what the law is, but why it is the way it is. It examines how laws have had to respond to social changes in family life, from rapidly rising divorce rates to surrogate mothers, and gives insight into family courts which are required to deal with the chaos of family life and often struggle to keep up-to-date with the social and scientific changes which affect it. It also looks to the future: what will families look like in the years ahead? What new dilemmas will the courts face? ABOUT THE SERIES: The Very Short Introductions series from Oxford University Press contains hundreds of titles in almost every subject area. These pocket-sized books are the perfect way to get ahead in a new subject quickly. Our expert authors combine facts, analysis, perspective, new ideas, and enthusiasm to make interesting and challenging topics highly readable.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9780191645594"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "0191645591"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 144,
+          "printType": "BOOK",
+          "categories": [
+            "Law"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "0.2.0.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=Hch7AgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=Hch7AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=Hch7AgAAQBAJ&printsec=frontcover&dq=a&hl=&cd=8&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=Hch7AgAAQBAJ&dq=a&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Family_Law_A_Very_Short_Introduction.html?hl=&id=Hch7AgAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Family_Law_A_Very_Short_Introduction-sample-pdf.acsm?id=Hch7AgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=Hch7AgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "ABOUT THE SERIES: The Very Short Introductions series from Oxford University Press contains hundreds of titles in almost every subject area. These pocket-sized books are the perfect way to get ahead in a new subject quickly."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "N_8UAAAAQAAJ",
+        "etag": "DCLdfgW0LEE",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/N_8UAAAAQAAJ",
+        "volumeInfo": {
+          "title": "A Catalogue of the Manuscripts Preserved in the Library of the University of Cambridge",
+          "authors": [
+            "Cambridge University Library"
+          ],
+          "publishedDate": "1856",
+          "industryIdentifiers": [
+            {
+              "type": "OTHER",
+              "identifier": "OXFORD:590196636"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "printType": "BOOK",
+          "categories": [
+            "Manuscripts"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.1.2.0.full.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=N_8UAAAAQAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=N_8UAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=N_8UAAAAQAAJ&printsec=frontcover&dq=a&hl=&cd=9&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=N_8UAAAAQAAJ&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=N_8UAAAAQAAJ"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "FREE",
+          "isEbook": true,
+          "buyLink": "https://play.google.com/store/books/details?id=N_8UAAAAQAAJ&rdid=book-N_8UAAAAQAAJ&rdot=1&source=gbs_api"
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "ALL_PAGES",
+          "embeddable": true,
+          "publicDomain": true,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false,
+            "downloadLink": "http://books.google.com/books/download/A_Catalogue_of_the_Manuscripts_Preserved.epub?id=N_8UAAAAQAAJ&hl=&output=epub&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "downloadLink": "http://books.google.com/books/download/A_Catalogue_of_the_Manuscripts_Preserved.pdf?id=N_8UAAAAQAAJ&hl=&output=pdf&sig=ACfU3U0KenFMKMlVFRSwDoBweG3ExNjmtg&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=N_8UAAAAQAAJ&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+          "quoteSharingAllowed": false
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "sHkgON1Gr1wC",
+        "etag": "gc9PbNImF6g",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/sHkgON1Gr1wC",
+        "volumeInfo": {
+          "title": "Works and Days",
+          "subtitle": "A Translation and Commentary for the Social Sciences",
+          "authors": [
+            "Hesiod"
+          ],
+          "publisher": "Univ of California Press",
+          "publishedDate": "1997-01-24",
+          "description": "This new, annotated translation of Hesiod's Works and Days is a collaboration between David W. Tandy, a classicist, and Walter Neale, an economist and economic historian. Hesiod was an ancient Greek poet whose Works and Days discusses agricultural practices and society in general. Classicists and ancient historians have turned to Works and Days for its insights on Greek mythology and religion. The poem also sheds light on economic history and ancient agriculture, and is a good resource for social scientists interested in these areas. This translation emphasizes the activities and problems of a practicing agriculturist as well as the larger, changing political and economic institutions of the early archaic period. The authors provide a clear, accurate translation along with notes aimed at a broad audience. The introductory essay discusses the changing economic, political and trading world of the eighth and seventh centuries B.C.E., while the notes present the range and possible meanings of important Greek terms and references in the poem and highlight areas of ambiguity in our understanding of Works and Days.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "0520917359"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9780520917354"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": true
+          },
+          "pageCount": 100,
+          "printType": "BOOK",
+          "categories": [
+            "Literary Criticism"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "2.0.1.0.preview.1",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=sHkgON1Gr1wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=sHkgON1Gr1wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "en",
+          "previewLink": "http://books.google.com/books?id=sHkgON1Gr1wC&printsec=frontcover&dq=a&hl=&cd=10&source=gbs_api",
+          "infoLink": "http://books.google.com/books?id=sHkgON1Gr1wC&dq=a&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Works_and_Days.html?hl=&id=sHkgON1Gr1wC"
+        },
+        "saleInfo": {
+          "country": "IL",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "IL",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com/books/download/Works_and_Days-sample-pdf.acsm?id=sHkgON1Gr1wC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=sHkgON1Gr1wC&hl=&printsec=frontcover&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "The introductory essay discusses the changing economic, political and trading world of the eighth and seventh centuries B.C.E., while the notes present the range and possible meanings of important Greek terms and references in the poem and ..."
+        }
+      }
+    ]
+  }

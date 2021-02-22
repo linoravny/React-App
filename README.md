@@ -2,9 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About
 react js app with 
 - rebass for UI components
+- @emotion/react + @rebass/preset for css team handle
 - react-router-dom for web routing
 - react-redux for state management
-- react-formal for handel form and "yap" is used to implement asynchronous methods and provides a consistent mechanism to handle the results and report errors.
+- formik for handel forms
 
 ## Available Scripts
 
