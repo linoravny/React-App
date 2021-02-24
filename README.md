@@ -6,6 +6,7 @@ react js app with
 - react-router-dom for web routing
 - react-redux for state management
 - formik for handel forms
+- axios - handle http. progressive AJAX API 
 
 ## Available Scripts
 

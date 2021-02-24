@@ -19,10 +19,6 @@ import LoginForm from './login/LoginForm';
 
 import { ThemeProvider, Global, css  } from '@emotion/react';
 import theme from './theme.js';
-//import preset from '@rebass/preset';
-// const theme = {
-//   ...preset,
-// }
 import normalize from "normalize.css";
 
 const userName = "Linor";
@@ -62,7 +58,7 @@ const App = props => {
           <Header userName={userName} /> 
           <Switch>
             <Route exact path="/store">
-              <List guitarList={guitarList}/>
+              <List />
             </Route>
             <Route path="/loginForm">
               <LoginForm /> 

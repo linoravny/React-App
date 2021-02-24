@@ -38,7 +38,7 @@ function LoginForm() {
     },
     validate,
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      console.log(JSON.stringify(values, null, 2));
 
       dispatch(logIn());
       history.push('/store');
