@@ -6,6 +6,9 @@ import { Button, Box} from 'rebass';
 import { Input, Label } from '@rebass/forms';
 import { logIn } from '../actions';
 
+import theme from '../theme.js';
+import styled from '@emotion/styled';
+
 function LoginForm() {
   const dispatch = useDispatch();
   const history = useHistory();
@@ -42,14 +45,47 @@ function LoginForm() {
     },
   });
 
+  const Input = styled.input`
+      outline: 0;
+      padding: 0.6rem 1rem;
+      border: 1px solid rgba(34, 36, 38, 0.15);
+      border-radius: 3px;
+      min-width: 280px;
+      margin: 15px;
+      &:focus,
+      &:active {
+        border-color: #85b7d9;
+      }
+      @media (max-width: 778px) {
+        margin-top: 10px;
+      }
+  `;
+
+  const Button = styled.button`
+  background-color: #2185d0;
+  color: #ffffff;
+  text-shadow: none;
+  background-image: none;
+  padding: 0.6rem 1.5rem;
+  margin: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  @media (max-width: 778px) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+`;
+
   return (
-    // JSX
-    <div>
+    
+    <Box  sx={{  
+      width: theme.widthPercentage[8],  
+      margin: "auto"
+    }}>
       <h3>Login Form</h3>
       <form onSubmit={formik.handleSubmit}>
 
         <Box>
-          <Label htmlFor="email">Email</Label>
           <Input
             type="email"
             id="email" 
@@ -62,7 +98,6 @@ function LoginForm() {
         </Box>
 
         <Box>
-          <Label htmlFor="password">Password</Label>
           <Input
             type="password" 
             id="password" 
@@ -75,13 +110,12 @@ function LoginForm() {
         </Box>
 
         <Box>
-          <Button 
-            type="submit">
+          <Button type="submit" >
             Submit
           </Button>
         </Box>
     </form>
-  </div>
+  </Box>
   )
 
 

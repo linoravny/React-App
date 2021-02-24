@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About
 react js app with 
 - rebass for UI components
-- @emotion/react + @rebass/preset for css team handle
+- rebass theme + @emotion/react + @emotion/styled for css team handle
 - react-router-dom for web routing
 - react-redux for state management
 - formik for handel forms

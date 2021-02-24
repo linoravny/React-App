@@ -1,25 +1,29 @@
 import React from 'react'
-import './App.css';
-import Header from './Hearder'
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import {
+  Box,
+  Heading,
+  Button
+} from 'rebass'
 
-
+import './App.css';
+import Header from './Hearder'
 import List from './userStore/List';
 import LoginForm from './login/LoginForm';
 
 
-//import theme from './theme.js'
-//import { ThemeProvider } from '@emotion/react';
-//import normalize from "normalize.css";
-
-//import preset from "@rebass/preset";
+import { ThemeProvider, Global, css  } from '@emotion/react';
+import theme from './theme.js';
+//import preset from '@rebass/preset';
 // const theme = {
-//   ...preset
-// };
+//   ...preset,
+// }
+import normalize from "normalize.css";
 
 const userName = "Linor";
 
@@ -42,37 +46,33 @@ const guitarList = [
   }
 ];
 
-
-function App() {
-
-    return (
-      // <ThemeProvider theme={theme}>
-       // {
-          /* <Global
+const App = props => {
+  return (
+    <ThemeProvider theme={theme}>
+       <Global
         styles={css`
           ${normalize}
           body {
             background-color: #fafafa;
           }
         `}
-        /> */
-      //}
-       // {/* <div className="App"> */}
-          <Router>
-            <Header userName={userName} /> 
+      />
+      <Box>
+        <Router>
+          <Header userName={userName} /> 
+          <Switch>
+            <Route exact path="/store">
+              <List guitarList={guitarList}/>
+            </Route>
+            <Route path="/loginForm">
+              <LoginForm /> 
+            </Route>
+          </Switch>
 
-            <Switch>
-              <Route exact path="/store">
-                <List guitarList={guitarList}/>
-              </Route>
-              <Route path="/loginForm">
-                <LoginForm /> 
-              </Route>
-            </Switch>
-          </Router>
-       // {/* </div> */}
-      // </ThemeProvider>
-    )
+        </Router>
+      </Box>
+    </ThemeProvider>
+  )
 }
 
 export default App;

@@ -29,13 +29,18 @@ export default {
       large: '0 0 24px rgba(0, 0, 0, .125)'
     },
     variants: {
+      primeryBtn: {
+        bg: '#07c',
+        borderRadius: 2,
+      }
     },
     text: {
     },
     buttons: {
-      primary: {
-        color: 'white',
-        bg: 'primary',
-      }
-    }
+    },
+    input:{
+    },
+    widthPercentage:[
+      "0%", "10%", "20%", "25%", "33%", "50%", "66%", "80%", "90%", "100%"
+    ],
   }
