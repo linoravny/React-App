@@ -32,13 +32,23 @@ export default {
       primeryBtn: {
         bg: '#07c',
         borderRadius: 2,
-      }
+      },
+      card: {
+        p: 2,
+        bg: 'background',
+        boxShadow: 'card',
+        borderRadius: 2,
+      },
     },
     text: {
     },
     buttons: {
     },
     input:{
+    },
+    card:{
+      padding: "10px",
+      margin: "15px",
     },
     widthPercentage:[
       "0%", "10%", "20%", "25%", "33%", "50%", "66%", "80%", "90%", "100%"

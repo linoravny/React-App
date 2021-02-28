@@ -1,7 +1,10 @@
 import React, {useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Image, Box, Card, Text} from 'rebass';
+import { Image, Box, Card, Text, Heading} from 'rebass';
 import axios from 'axios';
+
+import theme from '../theme.js';
+import styled from '@emotion/styled';
 
 function List() {
   //from store - REDUX
@@ -23,25 +26,25 @@ function List() {
     // };
  
     // fetchData();
-
-    setLoading(true);
-    axios.get(apiUrl).then((repos) => {
-      //setTimeout(function(){ //for check loading
-        console.log("repos.data:" + JSON.stringify(repos.data));
-        setData(repos.data.items);
+    if(isUserActive) {
+      setLoading(true);
+      axios.get(apiUrl).then((repos) => {
+        //setTimeout(function(){ //for check loading
+          //console.log("repos.data:" + JSON.stringify(repos.data));
+          setData(repos.data.items);
+          setLoading(false);
+        //}, 2000);
+        
+      }).catch((err) => {
+        console.log("FETCH_DATA_REJECTED err" + err);
         setLoading(false);
-      //}, 2000);
-      
-    }).catch((err) => {
-      console.log("FETCH_DATA_REJECTED err" + err);
-      setLoading(false);
-    });
+      });
+    }
 
-  },[]);
+  },[setLoading, setData,isUserActive]);
 
   return (
-    <div>
-      <h3>Guitar List</h3>
+    <div className="BookList">
       {
       isUserActive ?  
 
@@ -53,7 +56,8 @@ function List() {
         <Box>
           {books.map((book, index) => {
             return (
-              <Card width={256} key={book.id}>
+              <Card className="bookListItem" width={256} key={book.id}>
+                
                 <Image
                   alt={`${book.volumeInfo.title} book`}
                   src={`${book.volumeInfo.imageLinks.smallThumbnail}&printsec=frontcover&img=1&zoom=1&source=gbs_api` }
@@ -63,7 +67,7 @@ function List() {
                     borderRadius: 9999,
                   }}
                 />
-                <Text>{book.volumeInfo.title}</Text>
+                <Heading>{book.volumeInfo.title}</Heading>
                 <Text>{book.volumeInfo.publishedDate}</Text>
 
               </Card>

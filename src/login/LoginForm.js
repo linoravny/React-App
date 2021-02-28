@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux'; 
 import { useHistory } from 'react-router-dom';
 import { useFormik } from 'formik';
-import { Button, Box} from 'rebass';
-import { Input, Label } from '@rebass/forms';
+import { Box} from 'rebass';
 import { logIn } from '../actions';
 
 import theme from '../theme.js';
@@ -90,6 +89,7 @@ function LoginForm() {
             type="email"
             id="email" 
             name="email"
+            autocomplete="on"
             placeholder="Enter email" 
             value={formik.values.email}
             onBlur={formik.handleBlur}
@@ -101,6 +101,7 @@ function LoginForm() {
           <Input
             type="password" 
             id="password" 
+            autocomplete="on"
             name="password"
             placeholder="Enter password"
             value={formik.values.password}

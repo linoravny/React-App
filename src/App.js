@@ -6,9 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import {
-  Box,
-  Heading,
-  Button
+  Box
 } from 'rebass'
 
 import './App.css';
@@ -22,25 +20,6 @@ import theme from './theme.js';
 import normalize from "normalize.css";
 
 const userName = "Linor";
-
-
-const guitarList = [
-  {
-    _id: "1",
-    title: 'Rogue Starter Acoustic Guitar',
-    price: '248.00',
-  },
-  {
-    _id: "2",
-    title: 'G&L Limited Edition Tribute ASAT Classic Bluesboy Electric Guitar',
-    price: '1594.30',
-  },
-  {
-    _id: "3",
-    title: 'Rogue RG-624 Left-Handed Dreadnought Acoustic Guitar',
-    price: '354.30',
-  }
-];
 
 const App = props => {
   return (
