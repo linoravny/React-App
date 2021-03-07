@@ -1,6 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Image, Box, Card, Text, Heading} from 'rebass';
+import { Link } from "react-router-dom";
 import axios from 'axios';
 
 import theme from '../theme.js';
@@ -44,7 +45,7 @@ function List() {
   },[setLoading, setData,isUserActive]);
 
   return (
-    <div className="BookList">
+    <div className="bookList">
       {
       isUserActive ?  
 
@@ -56,21 +57,24 @@ function List() {
         <Box>
           {books.map((book, index) => {
             return (
-              <Card className="bookListItem" width={256} key={book.id}>
-                
-                <Image
-                  alt={`${book.volumeInfo.title} book`}
-                  src={`${book.volumeInfo.imageLinks.smallThumbnail}&printsec=frontcover&img=1&zoom=1&source=gbs_api` }
-                  sx={{
-                    width: 100,
-                    height: 100,
-                    borderRadius: 9999,
-                  }}
-                />
-                <Heading>{book.volumeInfo.title}</Heading>
-                <Text>{book.volumeInfo.publishedDate}</Text>
-
-              </Card>
+              <Link key={book.id} to={{
+                pathname: `/storeItem/${book.id}`,
+                state: { data: book }
+              }}>
+                <Card className="bookListItem" width={256}>
+                  <Image
+                    alt={`${book.volumeInfo.title} book`}
+                    src={`${book.volumeInfo.imageLinks.smallThumbnail}&printsec=frontcover&img=1&zoom=1&source=gbs_api` }
+                    sx={{
+                      width: 100,
+                      height: 100,
+                      borderRadius: 9999,
+                    }}
+                  />
+                  <Heading>{book.volumeInfo.title}</Heading>
+                  <Text>{book.volumeInfo.publishedDate}</Text>
+                </Card>
+              </Link>
             )
           })}
         </Box>

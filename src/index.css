@@ -12,10 +12,10 @@ code {
     monospace;
 }
 
-.BookList {
+.bookList {
   padding: 20px;
 }
-.BookList .bookListItem {
+.bookList .bookListItem {
   border: 1px solid #d1cbcb;
   padding: 10px;
   width: 80%;

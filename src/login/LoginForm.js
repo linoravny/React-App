@@ -61,19 +61,19 @@ function LoginForm() {
   `;
 
   const Button = styled.button`
-  background-color: #2185d0;
-  color: #ffffff;
-  text-shadow: none;
-  background-image: none;
-  padding: 0.6rem 1.5rem;
-  margin: 15px;
-  border-radius: 3px;
-  cursor: pointer;
-  @media (max-width: 778px) {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-`;
+    background-color: #2185d0;
+    color: #ffffff;
+    text-shadow: none;
+    background-image: none;
+    padding: 0.6rem 1.5rem;
+    margin: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    @media (max-width: 778px) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  `;
 
   return (
     
