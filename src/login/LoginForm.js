@@ -70,7 +70,6 @@ function LoginForm() {
                 <Form.Label>Name</Form.Label>
                 <Form.Control         
                   type="text"
-                  id="name" 
                   name="name"
                   autocomple="off"
                   placeholder="Enter name" 
@@ -83,7 +82,6 @@ function LoginForm() {
                 <Form.Label>Email address</Form.Label>
                 <Form.Control         
                   type="email"
-                  id="email" 
                   name="email"
                   autocomple="off"
                   placeholder="Enter email" 
@@ -96,7 +94,6 @@ function LoginForm() {
                 <Form.Label>Password</Form.Label>
                 <Form.Control
                   type="password" 
-                  id="password" 
                   name="password"
                   autocomple="off"
                   placeholder="Enter password"

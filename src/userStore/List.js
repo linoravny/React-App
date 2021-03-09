@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import Card from 'react-bootstrap/Card';
-import { Link } from "react-router-dom";
+import { Card, CardColumns, Col, Row, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 function List() {
@@ -43,43 +43,51 @@ function List() {
 
   return (
     <div className="bookList">
-      {
-      isUserActive ?  
+      <Container>
+        <Row>
+          <Col>
+            {
+            isUserActive ?  
 
-      <div>
-        <h3>BOOK LIST</h3>
-        { isLoading  && 
-          <div>loading...</div>
-        }
-        <div>
-          {books.map((book, index) => {
-            return (
-              <Link key={book.id} to={{
-                pathname: `/storeItem/${book.id}`,
-                state: { data: book }
-              }}>
-                <Card style={{ width: '20rem' }}>
-                  <Card.Img 
-                    alt={`${book.volumeInfo.title} book`}
-                    variant="top" 
-                    src={`${book.volumeInfo.imageLinks.smallThumbnail}&printsec=frontcover&img=1&zoom=1&source=gbs_api` } />
-                  <Card.Body>
-                    <Card.Title>{book.volumeInfo.title}</Card.Title>
-                    <Card.Text>
-                      {book.volumeInfo.publishedDate}
-                    </Card.Text>
-                    {/* <Button variant="primary">Go somewhere</Button> */}
-                  </Card.Body>
-                </Card>
-              </Link>
-            )
-          })}
-        </div> 
-      </div> 
-      : 
-      <div>You need to logged in!</div>
-      }
-     
+            <div>
+              <h3>BOOK LIST</h3>
+              { isLoading  && 
+                <div>loading...</div>
+              }
+              <div>
+                <CardColumns>
+                  {books.map((book, index) => {
+                    return (
+                      <Link key={book.id} to={{
+                        pathname: `/storeItem/${book.id}`,
+                        state: { data: book }
+                      }}>
+                        
+                          <Card bg="dark">
+                            <Card.Img variant="top"
+                              alt={`${book.volumeInfo.title} book`}
+                              src={`${book.volumeInfo.imageLinks.smallThumbnail}&printsec=frontcover&img=1&zoom=1&source=gbs_api` } />
+                            <Card.Body>
+                              <Card.Title>{book.volumeInfo.title}</Card.Title>
+                              <Card.Text>
+                                {book.volumeInfo.publishedDate}
+                              </Card.Text>
+                              {/* <Button variant="primary">Go somewhere</Button> */}
+                            </Card.Body>
+                          </Card>
+                        
+                      </Link>
+                    )
+                  })}
+                </CardColumns>
+              </div> 
+            </div> 
+            : 
+            <div>You need to logged in!</div>
+            }
+          </Col>
+        </Row>
+      </Container>
     </div>
   ) 
 }

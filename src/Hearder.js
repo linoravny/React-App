@@ -3,7 +3,6 @@ import { useSelector, useDispatch} from 'react-redux';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import {
-  Link as RouterLink,
   useHistory
 } from "react-router-dom";
 import { logOut } from './actions';

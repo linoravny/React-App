@@ -15,7 +15,8 @@ span {
 }
 
 .container {
-  margin: 20px 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* login form */
@@ -25,9 +26,10 @@ span {
 .loginForm h3 {
   text-align: center;
 }
+
 /* List */
-.bookList {
-  padding: 20px;
+.bookList .card img.card-img-top {
+  height: 200px;
 }
 .bookList .bookListItem {
   border: 1px solid #d1cbcb;
