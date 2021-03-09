@@ -2,7 +2,9 @@ import React from 'react';
 import { useSelector, useDispatch} from 'react-redux';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+
 import {
+  Link,
   useHistory
 } from "react-router-dom";
 import { logOut } from './actions';
@@ -23,7 +25,7 @@ function Header() {
 
       <Navbar bg="dark" variant="dark" expand="sm" sticky="top">
 
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/home">
         {
               isUserActive ?
               <Navbar.Text>Hello, Linor</Navbar.Text>
@@ -35,17 +37,17 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/store">Store</Nav.Link>
+            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/store">Store</Nav.Link>
           </Nav>
           <Nav>
             {
               isUserActive ?
-              <Nav.Link href="/home" onClick={handleClick}>
+              <Nav.Link as={Link} to="/home" onClick={handleClick}>
                   <Navbar.Text>Logout</Navbar.Text>
               </Nav.Link>
               :
-              <Nav.Link href="/loginForm">Login</Nav.Link>
+              <Nav.Link as={Link} to="/loginForm">Login</Nav.Link>
               }
           </Nav>
         </Navbar.Collapse>
