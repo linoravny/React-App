@@ -1,18 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## About
-react js app with 
-- rebass for UI components
-- rebass theme + @emotion/react + @emotion/styled for css team handle
+
+react js app with
+
+- react-bootstrap for grid system + UI components
 - react-router-dom for web routing
 - react-redux for state management
 - formik for handel forms
-- axios - handle http. progressive AJAX API 
+- axios - handle http. progressive AJAX API
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm install`
+
 Run only onle while clone repo - install packages to node_modules
 
 ### `npm start`

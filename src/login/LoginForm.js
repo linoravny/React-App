@@ -2,12 +2,14 @@ import React from 'react';
 import { useDispatch } from 'react-redux'; 
 import { useHistory } from 'react-router-dom';
 import { useFormik } from 'formik';
-import { Box, Button } from 'rebass';
-import { Input } from '@rebass/forms'
-import { logIn } from '../actions';
 
-import theme from '../theme.js';
-import styled from '@emotion/styled';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import { logIn } from '../actions';
 
 function LoginForm() {
   const dispatch = useDispatch();
@@ -47,7 +49,7 @@ function LoginForm() {
     history.push('/store');
   }
 
-  // with formik hook. formik manage the form state.
+  // with formik hook, formik manage the form state.
   const formik = useFormik({
     initialValues,
     validate,
@@ -56,93 +58,65 @@ function LoginForm() {
 
   //console.log("form values: " + JSON.stringify(formik.values));
 
-
-  // const Input = styled.input`
-  //     outline: 0;
-  //     padding: 0.6rem 1rem;
-  //     border: 1px solid rgba(34, 36, 38, 0.15);
-  //     border-radius: 3px;
-  //     min-width: 280px;
-  //     margin: 15px;
-  //     &:focus,
-  //     &:active {
-  //       border-color: #85b7d9;
-  //     }
-  //     @media (max-width: 778px) {
-  //       margin-top: 10px;
-  //     }
-  // `;
-
-  // const Button = styled.button`
-  //   background-color: #2185d0;
-  //   color: #ffffff;
-  //   text-shadow: none;
-  //   background-image: none;
-  //   padding: 0.6rem 1.5rem;
-  //   margin: 15px;
-  //   border-radius: 3px;
-  //   cursor: pointer;
-  //   @media (max-width: 778px) {
-  //     margin-left: 0;
-  //     margin-top: 10px;
-  //   }
-  // `;
-
   return (
-    
-    <Box  sx={{  
-      width: theme.widthPercentage[8],  
-      margin: "auto"
-    }}>
-      <h3>Login Form</h3>
+    <div className="container loginForm">
+      <h3>Sign In</h3>
+      <Container fluid="sm">
+        <Row>
+          <Col>
+            <Form onSubmit={formik.handleSubmit}>
 
-      <form onSubmit={formik.handleSubmit}>
-         <Box>
-          <Input
-            type="text"
-            id="name" 
-            name="name"
-            autocomple="off"
-            placeholder="Enter name" 
-            value={formik.values.name}
-            onChange={formik.handleChange}/>
-            {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
-        </Box>
+              <Form.Group controlId="formGroupName">
+                <Form.Label>Name</Form.Label>
+                <Form.Control         
+                  type="text"
+                  id="name" 
+                  name="name"
+                  autocomple="off"
+                  placeholder="Enter name" 
+                  value={formik.values.name}
+                  onChange={formik.handleChange}/>
+                  {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
+              </Form.Group>
 
-        <Box>
-          <Input
-            type="email"
-            id="email" 
-            name="email"
-            autocomple="off"
-            placeholder="Enter email" 
-            value={formik.values.email}
-            onChange={formik.handleChange}/>
-            {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
-        </Box>
+              <Form.Group controlId="formGroupEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control         
+                  type="email"
+                  id="email" 
+                  name="email"
+                  autocomple="off"
+                  placeholder="Enter email" 
+                  value={formik.values.email}
+                  onChange={formik.handleChange}/>
+                  {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
+              </Form.Group>
 
-        <Box>
-          <Input
-            type="password" 
-            id="password" 
-            name="password"
-            autocomple="off"
-            placeholder="Enter password"
-            value={formik.values.password}
-            onChange={formik.handleChange} />
-            {formik.touched.password && formik.errors.password ? <div>{formik.errors.password}</div> : null}
-        </Box>
+              <Form.Group controlId="formGroupPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control
+                  type="password" 
+                  id="password" 
+                  name="password"
+                  autocomple="off"
+                  placeholder="Enter password"
+                  value={formik.values.password}
+                  onChange={formik.handleChange} />
+                  {formik.touched.password && formik.errors.password ? <div>{formik.errors.password}</div> : null}
+              </Form.Group>
 
-        <Box>
-          <Button type="submit" >
-            Submit
-          </Button>
-        </Box>
-    </form>
-  </Box>
+              <Button variant="dark" 
+                type="submit" 
+                className="btn btn-dark btn-lg btn-block">
+                Submit
+              </Button>
+
+            </Form>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   )
-
-
 }
 
 export default LoginForm;
