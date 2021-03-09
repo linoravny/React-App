@@ -2,7 +2,8 @@ import React from 'react';
 import { useDispatch } from 'react-redux'; 
 import { useHistory } from 'react-router-dom';
 import { useFormik } from 'formik';
-import { Box} from 'rebass';
+import { Box, Button } from 'rebass';
+import { Input } from '@rebass/forms'
 import { logIn } from '../actions';
 
 import theme from '../theme.js';
@@ -12,8 +13,17 @@ function LoginForm() {
   const dispatch = useDispatch();
   const history = useHistory();
 
+  const initialValues = {
+    name:'',
+    email: '',
+    password: ''
+  }
+
   const validate = values => {
     const errors = {};
+    if (!values.name) {
+      errors.name = 'Required';
+    }
 
     if (!values.email) {
       errors.email = 'Required';
@@ -28,52 +38,55 @@ function LoginForm() {
     }
 
     return errors;
-  };
+  }
 
+  const onSubmit = values => {
+    console.log(JSON.stringify(values, null, 2));
+
+    dispatch(logIn());
+    history.push('/store');
+  }
+
+  // with formik hook. formik manage the form state.
   const formik = useFormik({
-    initialValues: {
-      email: '',
-      password: ''
-    },
+    initialValues,
     validate,
-    onSubmit: values => {
-      console.log(JSON.stringify(values, null, 2));
-
-      dispatch(logIn());
-      history.push('/store');
-    },
+    onSubmit
   });
 
-  const Input = styled.input`
-      outline: 0;
-      padding: 0.6rem 1rem;
-      border: 1px solid rgba(34, 36, 38, 0.15);
-      border-radius: 3px;
-      min-width: 280px;
-      margin: 15px;
-      &:focus,
-      &:active {
-        border-color: #85b7d9;
-      }
-      @media (max-width: 778px) {
-        margin-top: 10px;
-      }
-  `;
+  //console.log("form values: " + JSON.stringify(formik.values));
 
-  const Button = styled.button`
-    background-color: #2185d0;
-    color: #ffffff;
-    text-shadow: none;
-    background-image: none;
-    padding: 0.6rem 1.5rem;
-    margin: 15px;
-    border-radius: 3px;
-    cursor: pointer;
-    @media (max-width: 778px) {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-  `;
+
+  // const Input = styled.input`
+  //     outline: 0;
+  //     padding: 0.6rem 1rem;
+  //     border: 1px solid rgba(34, 36, 38, 0.15);
+  //     border-radius: 3px;
+  //     min-width: 280px;
+  //     margin: 15px;
+  //     &:focus,
+  //     &:active {
+  //       border-color: #85b7d9;
+  //     }
+  //     @media (max-width: 778px) {
+  //       margin-top: 10px;
+  //     }
+  // `;
+
+  // const Button = styled.button`
+  //   background-color: #2185d0;
+  //   color: #ffffff;
+  //   text-shadow: none;
+  //   background-image: none;
+  //   padding: 0.6rem 1.5rem;
+  //   margin: 15px;
+  //   border-radius: 3px;
+  //   cursor: pointer;
+  //   @media (max-width: 778px) {
+  //     margin-left: 0;
+  //     margin-top: 10px;
+  //   }
+  // `;
 
   return (
     
@@ -82,17 +95,28 @@ function LoginForm() {
       margin: "auto"
     }}>
       <h3>Login Form</h3>
+
       <form onSubmit={formik.handleSubmit}>
+         <Box>
+          <Input
+            type="text"
+            id="name" 
+            name="name"
+            autocomple="off"
+            placeholder="Enter name" 
+            value={formik.values.name}
+            onChange={formik.handleChange}/>
+            {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}
+        </Box>
 
         <Box>
           <Input
             type="email"
             id="email" 
             name="email"
-            autocomplete="on"
+            autocomple="off"
             placeholder="Enter email" 
             value={formik.values.email}
-            onBlur={formik.handleBlur}
             onChange={formik.handleChange}/>
             {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
         </Box>
@@ -101,11 +125,10 @@ function LoginForm() {
           <Input
             type="password" 
             id="password" 
-            autocomplete="on"
             name="password"
+            autocomple="off"
             placeholder="Enter password"
             value={formik.values.password}
-            onBlur={formik.handleBlur}
             onChange={formik.handleChange} />
             {formik.touched.password && formik.errors.password ? <div>{formik.errors.password}</div> : null}
         </Box>

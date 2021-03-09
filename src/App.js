@@ -5,9 +5,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import {
-  Box
-} from 'rebass'
 
 import './App.css';
 import Header from './Hearder';
@@ -19,7 +16,6 @@ import ListItem from './userStore/ListItem';
 import { ThemeProvider, Global, css  } from '@emotion/react';
 import theme from './theme.js';
 import normalize from "normalize.css";
-import { useSelector } from 'react-redux';
 
 
 const userName = "Linor";
@@ -35,19 +31,16 @@ const App = props => {
           }
         `}
       />
-      <Box>
-        
-        <BrowserRouter >
-          <Header userName={userName} /> 
-          <Switch>
-            <Route exact path="/store"  component={List}></Route>
-            <Route exact path="/storeItem/:id" component={ListItem}></Route>
-            <Route exact path="/loginForm" component={LoginForm}></Route>
-            <Route path="/" component={Home}></Route>
-          </Switch>
+      <BrowserRouter >
+        <Header userName={userName} /> 
+        <Switch>
+          <Route exact path="/store"  component={List}></Route>
+          <Route exact path="/storeItem/:id" component={ListItem}></Route>
+          <Route exact path="/loginForm" component={LoginForm}></Route>
+          <Route path="/" component={Home}></Route>
+        </Switch>
 
-        </BrowserRouter >
-      </Box>
+      </BrowserRouter >
     </ThemeProvider>
   )
 }

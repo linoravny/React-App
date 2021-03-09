@@ -4,9 +4,6 @@ import { Image, Box, Card, Text, Heading} from 'rebass';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
-import theme from '../theme.js';
-import styled from '@emotion/styled';
-
 function List() {
   //from store - REDUX
   const isUserActive = useSelector(state => state.isLoggedIn);

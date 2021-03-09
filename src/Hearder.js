@@ -6,6 +6,8 @@ import {
   Flex,
   Text
 } from 'rebass';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import {
   Link as RouterLink,
   useHistory
@@ -26,6 +28,25 @@ function Header() {
 
   return (
     <div>
+
+<Navbar bg="light" expand="lg">
+  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="/home">Home</Nav.Link>
+      <Nav.Link path="/store">Store</Nav.Link>
+      {
+          isUserActive ?
+          <Nav.Link href="" onClick={handleClick}>Logout</Nav.Link>
+          :
+          <Nav.Link href="/loginForm">Login</Nav.Link>
+        }
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+
+
       <Flex
         px={3}
         color='white'
