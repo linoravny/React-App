@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Image, Box, Card, Text, Heading} from 'rebass';
+import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
@@ -49,32 +49,32 @@ function List() {
       <div>
         <h3>BOOK LIST</h3>
         { isLoading  && 
-          <Box>loading...</Box>
+          <div>loading...</div>
         }
-        <Box>
+        <div>
           {books.map((book, index) => {
             return (
               <Link key={book.id} to={{
                 pathname: `/storeItem/${book.id}`,
                 state: { data: book }
               }}>
-                <Card className="bookListItem" width={256}>
-                  <Image
+                <Card style={{ width: '20rem' }}>
+                  <Card.Img 
                     alt={`${book.volumeInfo.title} book`}
-                    src={`${book.volumeInfo.imageLinks.smallThumbnail}&printsec=frontcover&img=1&zoom=1&source=gbs_api` }
-                    sx={{
-                      width: 100,
-                      height: 100,
-                      borderRadius: 9999,
-                    }}
-                  />
-                  <Heading>{book.volumeInfo.title}</Heading>
-                  <Text>{book.volumeInfo.publishedDate}</Text>
+                    variant="top" 
+                    src={`${book.volumeInfo.imageLinks.smallThumbnail}&printsec=frontcover&img=1&zoom=1&source=gbs_api` } />
+                  <Card.Body>
+                    <Card.Title>{book.volumeInfo.title}</Card.Title>
+                    <Card.Text>
+                      {book.volumeInfo.publishedDate}
+                    </Card.Text>
+                    {/* <Button variant="primary">Go somewhere</Button> */}
+                  </Card.Body>
                 </Card>
               </Link>
             )
           })}
-        </Box>
+        </div> 
       </div> 
       : 
       <div>You need to logged in!</div>
