@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function List() {
   //from store - REDUX
-  const isUserActive = useSelector(state => state.isLoggedIn);
+  const isUserActive = useSelector(state => state.userData.isUserActive);
 
   //hook useState
   const [books, setData] = useState([]); //add state to function components

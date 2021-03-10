@@ -6,11 +6,15 @@ import {
   Link,
   useHistory
 } from "react-router-dom";
-import { logOut } from './actions';
+import { logOut, getUser } from './actions';
 
 function Header() {
   const dispatch = useDispatch();
-  const isUserActive = useSelector(state => state.isLoggedIn);
+  const isUserActive = useSelector(state => state.userData.isUserActive);
+  //const userData = dispatch(getUser());
+  const userData = useSelector(state => state.userData.user);
+  console.log("Header() userData: "+ userData);
+  
   const history = useHistory();
 
   function handleClick(){
@@ -26,7 +30,7 @@ function Header() {
         <Navbar.Brand as={Link} to="/home">
         {
               isUserActive ?
-              <Navbar.Text>Hello, Linor</Navbar.Text>
+              <Navbar.Text>Hello, </Navbar.Text>
               :
               <Navbar.Text>React App</Navbar.Text>
         }

@@ -10,6 +10,7 @@ import allReducers  from './reducers/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
  // CREATE STORE 
+ // reducers produce the state of the application.
 const storeApp = createStore(
   allReducers,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() //chrome de=v tool: zalmoxisus/redux-devtools-extension

@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { logIn } from '../actions';
+import { logIn, setUser } from '../actions';
 
 function LoginForm() {
   const dispatch = useDispatch();
@@ -46,6 +46,8 @@ function LoginForm() {
     console.log(JSON.stringify(values, null, 2));
 
     dispatch(logIn());
+    dispatch(setUser({name:"lala"}));
+
     history.push('/store');
   }
 

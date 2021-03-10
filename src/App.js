@@ -27,7 +27,7 @@ const App = props => {
         styles={css`
           ${normalize}
           body {
-            background-color: #fafafa;
+            background-color: #ded8d8;
           }
         `}
       />
