@@ -1,7 +1,6 @@
 import React from 'react';
-import { useSelector, useDispatch} from 'react-redux';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { useSelector, useDispatch } from 'react-redux';
+import { Nav, Navbar } from 'react-bootstrap';
 
 import {
   Link,
@@ -10,7 +9,6 @@ import {
 import { logOut } from './actions';
 
 function Header() {
-
   const dispatch = useDispatch();
   const isUserActive = useSelector(state => state.isLoggedIn);
   const history = useHistory();

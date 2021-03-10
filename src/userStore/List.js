@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Card, CardColumns, Col, Row, Container } from 'react-bootstrap';
+import { Card, CardColumns, Col, Row, Container, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -26,17 +26,19 @@ function List() {
     // fetchData();
     if(isUserActive) {
       setLoading(true);
-      axios.get(apiUrl).then((repos) => {
-        //setTimeout(function(){ //for check loading
-          //console.log("repos.data:" + JSON.stringify(repos.data));
-          setData(repos.data.items);
+      setTimeout(() => {
+        axios.get(apiUrl).then((repos) => {
+          //setTimeout(function(){ //for check loading
+            //console.log("repos.data:" + JSON.stringify(repos.data));
+            setData(repos.data.items);
+            setLoading(false);
+          //}, 2000);
+          
+        }).catch((err) => {
+          console.log("FETCH_DATA_REJECTED err" + err);
           setLoading(false);
-        //}, 2000);
-        
-      }).catch((err) => {
-        console.log("FETCH_DATA_REJECTED err" + err);
-        setLoading(false);
-      });
+        });
+      },2000);
     }
 
   },[setLoading, setData,isUserActive]);
@@ -52,7 +54,7 @@ function List() {
             <div>
               <h3>BOOK LIST</h3>
               { isLoading  && 
-                <div>loading...</div>
+                <Spinner animation="border" variant="secondary" />
               }
               <div>
                 <CardColumns>
@@ -60,7 +62,7 @@ function List() {
                     return (
                       <Link key={book.id} to={{
                         pathname: `/storeItem/${book.id}`,
-                        state: { data: book }
+                        query: book 
                       }}>
                         
                           <Card bg="dark">
@@ -72,7 +74,6 @@ function List() {
                               <Card.Text>
                                 {book.volumeInfo.publishedDate}
                               </Card.Text>
-                              {/* <Button variant="primary">Go somewhere</Button> */}
                             </Card.Body>
                           </Card>
                         
