@@ -14,20 +14,22 @@ function ListItem(props) {
             {
             (bookItemData && bookItemData.volumeInfo) ?
               <Jumbotron>
-                <h1>{bookItemData.volumeInfo.title}</h1>
-                <p>
+                <h1 class="display-4">{bookItemData.volumeInfo.title}</h1>
+                <p class="lead">
                   {bookItemData.volumeInfo.subtitle}
                 </p>
+                <hr class="my-4" />
                 <p>
-                  <a href={bookItemData.volumeInfo.canonicalVolumeLink} 
-                    variant="dark" 
-                    target="_blank">
+                  <a class="btn btn-primary btn-lg"
+                     href={bookItemData.volumeInfo.canonicalVolumeLink} 
+                     variant="dark" 
+                     target="_blank">
                     canonical volume link
                   </a>
                 </p>
               </Jumbotron>
               :
-              <div>No Data To Display :( </div>
+              <div>Please logging. No Data To Display :( </div>
             }
           </Col>
         </Row>
