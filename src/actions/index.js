@@ -11,10 +11,10 @@ export const logOut = () => {
     }
 }
 
-export const setUser = (user) => {
+export const setUser = (payload) => {
     return {
         type: 'SET_USER',
-        payload: user,
+        payload
     }
 }
 

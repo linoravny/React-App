@@ -46,8 +46,8 @@ function LoginForm() {
     console.log(JSON.stringify(values, null, 2));
 
     dispatch(logIn());
-    dispatch(setUser({name:"lala"}));
-
+    dispatch(setUser({name:values.name, email:values.email}));
+  
     history.push('/store');
   }
 
