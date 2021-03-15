@@ -6,11 +6,11 @@ import {
   Link,
   useHistory
 } from "react-router-dom";
-import { logOut, getUser } from './actions';
+import { logOut, setUser } from './actions';
 
 function Header() {
   const dispatch = useDispatch();
-  
+
   const isUserActive = useSelector(state => state.userData.isUserActive);
   const userData = useSelector(state => state.userData.user);
 
@@ -18,6 +18,7 @@ function Header() {
 
   function handleClick(){
     dispatch(logOut());
+    dispatch(setUser({}));
     history.push('/home');
   }
 
